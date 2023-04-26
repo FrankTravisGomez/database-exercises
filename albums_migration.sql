@@ -8,3 +8,5 @@ CREATE TABLE IF NOT EXISTS albums (
     genre VARCHAR(50),
     PRIMARY KEY (id)
 );
+ALTER TABLE albums
+    ADD UNIQUE (artist, name);
